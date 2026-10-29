@@ -1,0 +1,33 @@
+COUNTER compliance_status 2016: 3 unique values, sum=1823 == 1823; values={'In Compliance': 1337, 'Exempt': 294, 'Out of Compliance': 192} PASS
+COUNTER compliance_status 2019: 3 unique values, sum=3007 == 3007; values={'In Compliance': 2298, 'Out of Compliance': 431, 'Exempt': 278} PASS
+COUNTER compliance_status 2025: 4 unique values, sum=2700 == 2700; values={'in compliance': 2306, 'not submitted': 234, 'pending revisions': 96, 'exempt': 64} PASS
+COUNTER primary_type 2025 (known EUI): 66 unique values, sum=2379 == 2379; top={'Multifamily Housing': 896, 'Office': 340, 'Non-Refrigerated Warehouse': 171, 'Distribution Center': 128, 'Hotel': 102, 'mixed use property': 81} PASS
+COUNTER primary_type 2018 anomaly: 2018 primary-type field carries Apartment=531, Condominium=300, and only 3 Multifamily Housing rows (all three with master type Municipal); 2018 is excluded from by-type comparisons PASS
+SENTINEL site_eui 2016: missing=486, zero=0, negative=0, known=1337; unknown excluded from every EUI denominator PASS
+SENTINEL site_eui 2017: missing=656, zero=0, negative=0, known=2370; unknown excluded from every EUI denominator PASS
+SENTINEL site_eui 2018: missing=554, zero=3, negative=0, known=2458; unknown excluded from every EUI denominator PASS
+SENTINEL site_eui 2019: missing=709, zero=0, negative=0, known=2298; unknown excluded from every EUI denominator PASS
+SENTINEL site_eui 2020: missing=612, zero=34, negative=0, known=2446; unknown excluded from every EUI denominator PASS
+SENTINEL site_eui 2021: missing=411, zero=20, negative=0, known=2474; unknown excluded from every EUI denominator PASS
+SENTINEL site_eui 2022: missing=261, zero=9, negative=0, known=2644; unknown excluded from every EUI denominator PASS
+SENTINEL site_eui 2023: missing=244, zero=6, negative=0, known=2906; unknown excluded from every EUI denominator PASS
+SENTINEL site_eui 2024: missing=258, zero=25, negative=0, known=2545; unknown excluded from every EUI denominator PASS
+SENTINEL site_eui 2025: missing=291, zero=30, negative=0, known=2379; unknown excluded from every EUI denominator PASS
+POLARITY site_eui 2016: kept sample (building_id, site_eui)=[[5819.0, 51.8], [5816.0, 62.2], [5815.0, 23.5]]; excluded sample=[[1002.0, nan], [1071.0, nan], [1116.0, nan]] (blank parses to missing, 0.0 is a stored zero; both map to unknown) PASS
+POLARITY site_eui 2025: kept sample (building_id, site_eui)=[[1002.0, 64.4], [1004.0, 58.8], [1005.0, 124.4]]; excluded sample=[[1001.0, nan], [1008.0, nan], [1011.0, nan]] (blank parses to missing, 0.0 is a stored zero; both map to unknown) PASS
+DENOMINATOR closure all years: known + zero + missing == rows for all 10 years (failures: []); every known share is printed on the full row count of its year PASS
+UNITS eui recompute (control): 23062 of 23816 building-years agree within max(1.0, 2%) = 96.8%; numerator and denominator are the same building-year (kBtu / sq ft) PASS
+PANEL 2016_2025: n=984, median 64.8 -> 53.1; share fell 73.7% PASS
+PANEL 2019_2025: n=1687, median 65.9 -> 52.4; share fell 81.6% PASS
+CONTROL office median 2025 (sorted-list): n=340, sorted-list median=52.9 vs stats 52.9 PASS
+CONTROL weather-normalized panel direction: WN matched panel median 63.2 -> 52.2 (n=1684) moves the same way as the site-EUI panel PASS
+JOIN building_id hygiene: duplicate (year, building_id) pairs=0; match rates: 2016 known also in 2025 known 984/1337 (73.6%), 2019 known also in 2025 known 1687/2298 (73.4%); unmatched buildings are buildings without a known EUI in the other year (not submitted, exempt, or not yet covered), which is why the brief reports the all-reporters series alongside the panels PASS
+SCALE floor area alongside counts: 2025: 332,390,060 sq ft across 2,700 rows; 2019: 358,859,791 sq ft across 3,007 rows (physical scale printed with every count comparison) PASS
+SMALL NUMBERS by-type 2025: 15 types have n>=30 and are the only types charted or compared; 51 types under 30 are flagged in stats.json and carry their counts wherever printed (incl. Hospital n=4, Data Center n=2) PASS
+SERVER fresh live recounts (tables): 2016-2022 server counts equal pull-log and stats row counts PASS
+SERVER excel item sizes: Hub item byte sizes for 2023-2025 equal the downloaded workbooks PASS
+SERVER parcels recount: parcels live 240492 == stats 240492 PASS
+SYNC README dependencies: code imports (third-party): ['matplotlib', 'numpy', 'openpyxl', 'pandas', 'pillow']; README dependency line: Python standard library; matplotlib; numpy; openpyxl; pandas; Pillow. PASS
+SYNC brief numbers present in stats: headline figures cross-checked against stats.json; missing from brief: [] PASS
+VOICE no en/em dashes in brief: published text uses plain hyphens only PASS
+AUDIT PASSED

@@ -1,0 +1,342 @@
+{
+ "checks": {
+  "rows_2016": {
+   "builder": 1823,
+   "independent": 1823,
+   "ok": true
+  },
+  "known_2016": {
+   "builder": 1337,
+   "independent": 1337,
+   "ok": true
+  },
+  "median_2016": {
+   "builder": 63.3,
+   "independent": 63.3,
+   "ok": true
+  },
+  "rows_2017": {
+   "builder": 3026,
+   "independent": 3026,
+   "ok": true
+  },
+  "known_2017": {
+   "builder": 2370,
+   "independent": 2370,
+   "ok": true
+  },
+  "median_2017": {
+   "builder": 61.5,
+   "independent": 61.5,
+   "ok": true
+  },
+  "rows_2018": {
+   "builder": 3015,
+   "independent": 3015,
+   "ok": true
+  },
+  "known_2018": {
+   "builder": 2458,
+   "independent": 2458,
+   "ok": true
+  },
+  "median_2018": {
+   "builder": 64.0,
+   "independent": 64.0,
+   "ok": true
+  },
+  "rows_2019": {
+   "builder": 3007,
+   "independent": 3007,
+   "ok": true
+  },
+  "known_2019": {
+   "builder": 2298,
+   "independent": 2298,
+   "ok": true
+  },
+  "median_2019": {
+   "builder": 66.7,
+   "independent": 66.7,
+   "ok": true
+  },
+  "rows_2020": {
+   "builder": 3092,
+   "independent": 3092,
+   "ok": true
+  },
+  "known_2020": {
+   "builder": 2446,
+   "independent": 2446,
+   "ok": true
+  },
+  "median_2020": {
+   "builder": 59.1,
+   "independent": 59.1,
+   "ok": true
+  },
+  "rows_2021": {
+   "builder": 2905,
+   "independent": 2905,
+   "ok": true
+  },
+  "known_2021": {
+   "builder": 2474,
+   "independent": 2474,
+   "ok": true
+  },
+  "median_2021": {
+   "builder": 58.7,
+   "independent": 58.7,
+   "ok": true
+  },
+  "rows_2022": {
+   "builder": 2914,
+   "independent": 2914,
+   "ok": true
+  },
+  "known_2022": {
+   "builder": 2644,
+   "independent": 2644,
+   "ok": true
+  },
+  "median_2022": {
+   "builder": 61.0,
+   "independent": 61.0,
+   "ok": true
+  },
+  "rows_2023": {
+   "builder": 3156,
+   "independent": 3156,
+   "ok": true
+  },
+  "known_2023": {
+   "builder": 2906,
+   "independent": 2906,
+   "ok": true
+  },
+  "median_2023": {
+   "builder": 58.3,
+   "independent": 58.3,
+   "ok": true
+  },
+  "rows_2024": {
+   "builder": 2828,
+   "independent": 2828,
+   "ok": true
+  },
+  "known_2024": {
+   "builder": 2545,
+   "independent": 2545,
+   "ok": true
+  },
+  "median_2024": {
+   "builder": 54.2,
+   "independent": 54.2,
+   "ok": true
+  },
+  "rows_2025": {
+   "builder": 2700,
+   "independent": 2700,
+   "ok": true
+  },
+  "known_2025": {
+   "builder": 2379,
+   "independent": 2379,
+   "ok": true
+  },
+  "median_2025": {
+   "builder": 51.5,
+   "independent": 51.5,
+   "ok": true
+  },
+  "panel_2016_2025_n": {
+   "builder": 984,
+   "independent": 984,
+   "ok": true
+  },
+  "panel_2016_2025_median_2016": {
+   "builder": 64.8,
+   "independent": 64.8,
+   "ok": true
+  },
+  "panel_2016_2025_median_2025": {
+   "builder": 53.1,
+   "independent": 53.1,
+   "ok": true
+  },
+  "panel_2016_2025_share_fell": {
+   "builder": 73.7,
+   "independent": 73.7,
+   "ok": true
+  },
+  "panel_2019_2025_n": {
+   "builder": 1687,
+   "independent": 1687,
+   "ok": true
+  },
+  "panel_2019_2025_median_2019": {
+   "builder": 65.9,
+   "independent": 65.9,
+   "ok": true
+  },
+  "panel_2019_2025_median_2025": {
+   "builder": 52.4,
+   "independent": 52.4,
+   "ok": true
+  },
+  "panel_2019_2025_share_fell": {
+   "builder": 81.6,
+   "independent": 81.6,
+   "ok": true
+  },
+  "type2025_Hotel": {
+   "builder": 71.1,
+   "independent": 71.1,
+   "ok": true
+  },
+  "type2025_Office": {
+   "builder": 52.9,
+   "independent": 52.9,
+   "ok": true
+  },
+  "type2025_Medical Office": {
+   "builder": 68.8,
+   "independent": 68.8,
+   "ok": true
+  },
+  "type2025_Supermarket/Grocery Store": {
+   "builder": 157.8,
+   "independent": 157.8,
+   "ok": true
+  },
+  "type2025_Multifamily Housing": {
+   "builder": 49.2,
+   "independent": 49.2,
+   "ok": true
+  },
+  "type2025_Non-Refrigerated Warehouse": {
+   "builder": 33.3,
+   "independent": 33.3,
+   "ok": true
+  },
+  "type2025_Distribution Center": {
+   "builder": 33.8,
+   "independent": 33.8,
+   "ok": true
+  },
+  "type2025_Retail Store": {
+   "builder": 50.6,
+   "independent": 50.6,
+   "ok": true
+  },
+  "type2025_Manufacturing/Industrial Plant": {
+   "builder": 61.5,
+   "independent": 61.5,
+   "ok": true
+  },
+  "type2025_mixed use property": {
+   "builder": 67.4,
+   "independent": 67.4,
+   "ok": true
+  },
+  "type2025_K-12 School": {
+   "builder": 53.0,
+   "independent": 53.0,
+   "ok": true
+  },
+  "type2025_Self-Storage Facility": {
+   "builder": 9.7,
+   "independent": 9.7,
+   "ok": true
+  },
+  "type2025_Worship Facility": {
+   "builder": 46.2,
+   "independent": 46.2,
+   "ok": true
+  },
+  "type2025_Strip Mall": {
+   "builder": 62.2,
+   "independent": 62.2,
+   "ok": true
+  },
+  "type2025_senior living community": {
+   "builder": 71.2,
+   "independent": 71.2,
+   "ok": true
+  },
+  "type2025_groups_compared": {
+   "builder": 15,
+   "independent": 15,
+   "ok": true
+  },
+  "control_recompute_n": {
+   "builder": 23816,
+   "independent": 23816,
+   "ok": true
+  },
+  "control_recompute_pct": {
+   "builder": 96.8,
+   "independent": 96.8,
+   "ok": true
+  },
+  "compliance_2025_counter": {
+   "builder": {
+    "in compliance": 2306,
+    "not submitted": 234,
+    "pending revisions": 96,
+    "exempt": 64
+   },
+   "independent": {
+    "in compliance": 2306,
+    "not submitted": 234,
+    "pending revisions": 96,
+    "exempt": 64
+   },
+   "ok": true
+  },
+  "distinct_buildings": {
+   "builder": 3687,
+   "independent": 3687,
+   "ok": true
+  },
+  "sqft_total_2025": {
+   "builder": 332390060,
+   "independent": 332390060,
+   "ok": true
+  },
+  "top_eui_2025_id": {
+   "builder": 6452,
+   "independent": 6452,
+   "ok": true
+  },
+  "top_eui_2025_value": {
+   "builder": 1271.3,
+   "independent": 1271.3,
+   "ok": true
+  },
+  "live_count_2016": {
+   "builder": 1823,
+   "independent": 1823,
+   "ok": true
+  },
+  "live_count_2019": {
+   "builder": 3007,
+   "independent": 3007,
+   "ok": true
+  },
+  "live_count_2022": {
+   "builder": 2914,
+   "independent": 2914,
+   "ok": true
+  },
+  "live_parcels": {
+   "builder": 240492,
+   "independent": 240492,
+   "ok": true
+  }
+ },
+ "n_checks": 65,
+ "n_ok": 65,
+ "all_ok": true
+}
